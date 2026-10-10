@@ -567,18 +567,18 @@ a.card.fig-card:hover img{transform:translateY(-4px) scale(1.02)}
 /* crew fx */
 .crew-fx{position:absolute;inset:0;pointer-events:none}
 .crew-fx i{position:absolute;left:calc(var(--x) * 1%);top:calc(var(--y) * 1%);border-radius:50%;transform:translate(-50%,-50%);mix-blend-mode:screen}
-.crew-fx .eye{width:2.1%;aspect-ratio:1}
-.crew-fx .eye.b{background:radial-gradient(circle,rgba(170,240,255,.95) 0,rgba(0,200,255,.55) 28%,rgba(0,170,255,0) 70%);animation:eyeb 4.2s ease-in-out infinite}
-.crew-fx .eye.r{width:2.6%;background:radial-gradient(circle,rgba(255,220,210,.95) 0,rgba(255,40,40,.7) 30%,rgba(255,0,0,0) 72%);animation:eyer 1.4s ease-in-out infinite;animation-delay:var(--d)}
-.crew-fx .imp{width:calc(var(--s) * 1%);aspect-ratio:1;animation:imp 3.2s ease-in-out infinite;animation-delay:var(--d)}
-.crew-fx .imp.c{background:radial-gradient(circle,rgba(120,250,255,.6) 0,rgba(0,240,255,.25) 35%,rgba(0,240,255,0) 70%)}
-.crew-fx .imp.r{background:radial-gradient(circle,rgba(255,120,140,.6) 0,rgba(255,42,60,.28) 35%,rgba(255,0,40,0) 70%)}
-.crew-fx .ember{left:20.9%;top:70%;width:1.6%;aspect-ratio:1;background:radial-gradient(circle,rgba(255,240,180,1) 0,rgba(255,140,40,.8) 30%,rgba(255,80,0,0) 70%);animation:ember 2.6s ease-in-out infinite}
+.crew-fx .eye{width:1.4%;aspect-ratio:1}
+.crew-fx .eye.b{background:radial-gradient(circle,rgba(170,240,255,.7) 0,rgba(0,200,255,.35) 30%,rgba(0,170,255,0) 70%);animation:eyeb 6s ease-in-out infinite}
+.crew-fx .eye.r{width:1.8%;background:radial-gradient(circle,rgba(255,200,190,.7) 0,rgba(255,40,40,.4) 30%,rgba(255,0,0,0) 72%);animation:eyer 3.2s ease-in-out infinite;animation-delay:var(--d)}
+.crew-fx .imp{width:calc(var(--s) * .6%);aspect-ratio:1;animation:imp 6.5s ease-in-out infinite;animation-delay:var(--d)}
+.crew-fx .imp.c{background:radial-gradient(circle,rgba(120,250,255,.35) 0,rgba(0,240,255,.14) 35%,rgba(0,240,255,0) 70%)}
+.crew-fx .imp.r{background:radial-gradient(circle,rgba(255,120,140,.35) 0,rgba(255,42,60,.16) 35%,rgba(255,0,40,0) 70%)}
+.crew-fx .ember{left:20.9%;top:70%;width:1.6%;aspect-ratio:1;background:radial-gradient(circle,rgba(255,240,180,1) 0,rgba(255,140,40,.8) 30%,rgba(255,80,0,0) 70%);animation:ember 4s ease-in-out infinite}
 .crew-fx .smoke{position:absolute;left:15.9%;top:30%;width:10%;height:40%;mix-blend-mode:screen}
-@keyframes eyeb{0%,100%{opacity:.55;transform:translate(-50%,-50%) scale(.9)}50%{opacity:1;transform:translate(-50%,-50%) scale(1.15)}}
-@keyframes eyer{0%,100%{opacity:.35}45%{opacity:1}55%{opacity:.9}}
-@keyframes imp{0%,100%{opacity:0;transform:translate(-50%,-50%) scale(.7)}40%{opacity:1;transform:translate(-50%,-50%) scale(1)}48%{opacity:.35}54%{opacity:.95}80%{opacity:0}}
-@keyframes ember{0%,100%{opacity:.6;transform:translate(-50%,-50%) scale(.85)}35%{opacity:1;transform:translate(-50%,-50%) scale(1.25)}60%{opacity:.75}}
+@keyframes eyeb{0%,100%{opacity:.45}50%{opacity:.8}}
+@keyframes eyer{0%,100%{opacity:.35}50%{opacity:.7}}
+@keyframes imp{0%,100%{opacity:0}45%{opacity:.7}75%{opacity:0}}
+@keyframes ember{0%,100%{opacity:.55}45%{opacity:.85}}
 @media (prefers-reduced-motion:reduce){.crew-fx i{animation:none;opacity:.8}}
 </style>
 
