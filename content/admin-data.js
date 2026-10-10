@@ -1,0 +1,1 @@
+window.ADMIN={"v": 1, "pass": "30d5082c49788f896201034c449f3541fb02b29b9b5c6134ecb976d0205ca655", "settings": {"ip": "145.239.130.3:7794", "discord": "https://discord.gg/projectm", "wargm": "https://wargm.ru/server/74770", "boosty": ""}, "announce": {"on": false, "kind": "info", "text": ""}, "news": null, "pages": {}};
