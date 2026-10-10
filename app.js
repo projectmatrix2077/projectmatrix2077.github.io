@@ -231,9 +231,9 @@ function crewFx(){
   const sz=()=>{const r=c.getBoundingClientRect();W=c.width=r.width;H=c.height=r.height};sz();addEventListener('resize',sz);
   let vis=true;const io=new IntersectionObserver(e=>{vis=e[0].isIntersecting});io.observe(c);
   (function f(){if(!document.body.contains(c)){io.disconnect();return}requestAnimationFrame(f);if(!vis||document.hidden)return;t++;
-    if(t%3===0)P.push({x:W*.5,y:H-2,vx:(Math.random()-.5)*.25,vy:-(.45+Math.random()*.35),r:3+Math.random()*3,a:.5,ph:Math.random()*6});
+    if(t%6===0)P.push({x:W*.5,y:H-2,vx:(Math.random()-.5)*.1,vy:-(.16+Math.random()*.14),r:3+Math.random()*3,a:.5,ph:Math.random()*6});
     x.clearRect(0,0,W,H);
-    for(const p of P){p.ph+=.03;p.x+=p.vx+Math.sin(p.ph+t*.01)*.35+(H-p.y)/H*.25;p.y+=p.vy;p.r+=.12;p.a*=.991;
+    for(const p of P){p.ph+=.012;p.x+=p.vx+Math.sin(p.ph+t*.004)*.15+(H-p.y)/H*.1;p.y+=p.vy;p.r+=.06;p.a*=.995;
       const g=x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r);g.addColorStop(0,`rgba(205,215,230,${p.a})`);g.addColorStop(1,'rgba(205,215,230,0)');x.fillStyle=g;x.beginPath();x.arc(p.x,p.y,p.r,0,7);x.fill()}
     P=P.filter(p=>p.a>.012&&p.y>-20);
   })();
